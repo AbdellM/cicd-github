@@ -49,18 +49,7 @@ function StudentDrawerForm({showDrawer, setShowDrawer, fetchStudents}) {
         onClose={onCLose}
         visible={showDrawer}
         bodyStyle={{paddingBottom: 80}}
-        footer={
-            <div
-                style={{
-                    textAlign: 'right',
-                }}
-            >
-                <Button onClick={onCLose} style={{marginRight: 8}}>
-                    Cancel
-                </Button>
-            </div>
-        }
-    >
+     >
         <Form layout="vertical"
               onFinishFailed={onFinishFailed}
               onFinish={onFinish}
